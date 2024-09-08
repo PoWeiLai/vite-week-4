@@ -1,3 +1,127 @@
-.index-title {
-  font-size: 100px;
+.banner{
+  background-image: url("/assets/images/home-header.png");
+  background-size:cover;
+  height:787px;
+  
+
+@include pad(){
+  .banner{
+    background-image: url("/assets/images/home-header-sm.png");
+    background-size:cover;
+    height:396px;
+    
+  }
 }
+}
+.advertisement{
+  background-image: url("/assets/images/index-bg.png");
+  background-size:cover;
+  height: 608px;
+  @include pad-large(){
+    &-mdl{
+      background-image: url("/assets/images/index-bg-md.png");
+      background-size:cover;
+      height: 960px;
+    }
+  
+  }
+  @include mobile(){
+   &-sm{
+      background-image: url("/assets/images/index-bg-sm.png");
+      background-size:cover;
+      height:820px;
+    }
+  }
+}
+
+.glasses{
+
+  @include pad-large(){
+    &-mdl{
+      &-column{
+        flex-direction: column;
+      }
+    }
+   }
+  &-left{
+    // background-image: url("/assets/images/home-section4-1.png");
+    // background-size:cover;
+    
+    max-width:648px;
+ @include pad-large(){
+  &-mdl{
+    &-max{
+      max-width:696px;
+      
+      align-items: center;
+    }
+  }
+ }
+    @include pad(){
+      &-md{
+        // background-image: url("/assets/images/home-section4-1-sm.png");
+        // background-size:cover;
+        
+        max-width:100%;
+      }
+    }
+  }
+  &-right{
+    // background-image: url("/assets/images/home-section4-2.png");
+    // background-size:cover;
+    height:246px;
+    max-width:648px;
+    @include pad-large(){
+      &-mdl{
+        &-max{
+          max-width:696px;
+          
+          align-items: center;
+        }
+      }
+     }
+    @include pad(){
+      &-md{
+        // background-image: url("/assets/images/home-section4-2-sm.png");
+        // background-size:cover;
+        
+        max-width:100%;
+      }
+    }
+  }
+}
+
+.contact{
+  .contact-from {
+    width: 50%;
+    margin: 0 auto;
+   @include pad-large(){
+    &-mdl{
+      width: 75%;
+    }
+   }
+   @include pad(){
+    &-md{
+      width: 100%;
+    }
+   }
+    textarea {
+      height: 136px;
+    }
+   }
+   
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    &-btn{
+      width:65%;
+      margin:0 auto;
+    }
+    @include pad(){
+      &-btn{
+        width:100%;
+      }
+    }
+  }

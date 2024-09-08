@@ -1,0 +1,402 @@
+
+.bg{
+    &-primary{
+        background-color: $primary;
+    }
+    &-danger{
+        background-color: $secondary;
+    }
+    &-light{
+        background-color: $third;
+    }
+    &-white{
+        background-color: $fourth;
+    }
+    &-gray{
+        background-color: #707070;
+    }      
+}
+.text{
+    &-primary{
+       color: $primary;
+    }
+    &-danger{
+       color: $secondary;
+    }
+    &-light{
+       color: $third;
+    }
+    &-white{
+       color: $fourth;
+    }     
+    &-gray{
+       color: #707070;
+    }    
+}
+
+
+
+
+.container{
+    max-width: 1320px;
+    margin:0 auto;
+    padding:0px 12px;
+    @include pad-large(){
+    
+
+        &-mdl{
+            max-width: 800px;
+            padding:0px 96px;
+        }
+    }
+    @include pad(){
+    
+            max-width:700px;
+            padding:0px;
+  
+        
+        &-md{
+            max-width:700px;
+            padding:0px 12px;
+        }
+        
+   
+    }
+    @include mobile(){
+        &-sm{
+            max-width:375px;
+            padding:0px 12px;
+        }
+    }
+ }
+ .border{
+    &-0{
+        border:0px;
+    }
+    &-1{
+        border:1px white solid;
+    }
+    &-shadow{
+        
+        box-shadow: 0px 2px 6px #00000029;
+    }
+    @include pad(){
+        &-md{
+            &-0{
+                border:0px;
+            }
+            &-1{
+                border:1px white solid;
+            }
+        }
+      }
+ 
+}
+
+
+.fs{
+    &-1{
+    font-size: 14px;
+    line-height: 21px;
+    }
+    &-2{
+    font-size: 16px;
+    line-height: 24px;
+    }
+    &-3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &-4{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    &-5{
+        font-size: 36px;
+        line-height: 54px;
+    }
+    &-6{
+        font-size: 48px;
+        line-height: 72px;
+    }
+    &-7{
+        font-size: 64px;
+        line-height: 96px;
+    }
+    @include pad(){
+    
+        &-md{
+         &-1{
+            font-size: 14px;
+            line-height: 21px;
+            }
+         &-2{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &-3{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &-4{
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &-5{
+            font-size: 36px;
+            line-height: 54px;
+        }
+        &-6{
+            font-size: 48px;
+            line-height: 72px;
+        }
+        &-7{
+            font-size: 64px;
+            line-height: 96px;
+        }
+        
+        }
+        
+         
+        }
+}
+
+
+
+
+.w{
+    &-24{
+        &-min{min-width: 24%;}
+    }
+    &-25{
+        max-width: 24%;
+        @include pad(){
+            &-md{
+                &-max{
+                max-width:24%;
+            }
+     &-100{
+        @include mobile(){
+            &-sm{
+                max-width:100%;
+            }
+        }
+     }       
+    &-576{
+        @include pad-large(){
+            &-mdl{
+                max-width: 576px;
+            }
+        }
+ 
+    }        
+    &-636{
+        max-width: 636px;
+    }
+}
+}
+    }
+    &-36{
+        width:36px;
+    }
+    &-48{
+        &-max{max-width:48px;}
+        @include pad-large(){
+            &-mdl{
+                &-max{
+                max-width:48%;
+            }
+    }
+}
+    }
+    &-50{
+        &-min{min-width: 50%;}
+        @include pad(){
+            &-md{
+                &-min{min-width: 50%;}
+            }
+        }
+    }
+  
+
+    &-80{
+        &-max{  max-width:80px;}
+      
+    }
+    &-100{
+        &-max{  max-width:100%;}
+        @include pad(){
+            &-md{
+                &-max{  max-width:100%;}
+            }
+        }
+        @include mobile(){
+            &-sm{
+                &-max{  max-width:100%;}
+            }
+        }
+    }
+  
+}
+.d{
+    &-flex{
+        display:flex;
+    @include pad(){
+        &-md{
+            display:flex;
+        }
+    }
+}
+    &-column{
+            flex-direction: column;
+            @include large(){
+                &-l{
+                    flex-direction: column;
+                }
+            }
+            @include pad-large(){
+                &-mdl{
+                    flex-direction: column;
+                }
+            }
+        @include pad(){
+            &-md{
+                flex-direction: column;
+            }
+        }
+    }
+
+    &-block{
+        display:block;
+    }
+    &-none{
+        display:none;
+        @include pad(){
+            &-md{
+                    display:none;
+            
+            }
+        }
+    }
+    &-wrap{
+        flex-wrap:wrap;
+        @include large(){
+            &-l{
+                flex-wrap:wrap;
+            }
+        }
+        @include pad-large(){
+            &-mdl{
+                flex-wrap:wrap;
+            }
+        }
+        @include pad(){
+            &-md{
+                flex-wrap:wrap;
+            }
+        }
+    }
+
+}
+
+.text{
+
+    &-align-center{
+        text-align:center;
+        @include pad(){
+            &-md{
+                text-align:center;
+            }
+        }
+    }
+    &-align-start{
+        text-align:start;
+        @include pad(){
+            &-md{
+                text-align:start;
+    }
+}
+}
+    &-align-end{
+        text-align:end;
+    }
+  
+    &-bold{
+        font-weight: bold;
+    }
+    &-900{
+        font-weight:900;
+    }
+    &-500{
+        font-weight:500;
+    }
+
+}
+   
+
+
+    .jcsb{
+        justify-content: space-between;
+    }
+    .jcc{
+        justify-content: center;
+        @include pad(){
+            &-md{
+                justify-content:center;
+            }
+        }
+    }
+    .aic{
+        align-items: center;
+        @include pad-large(){
+            &-mdl{
+                align-items: center;
+            }
+        }
+        @include pad(){
+            &-md{
+                align-items: center;
+            }
+        }
+    }
+    @include pad(){
+
+        .ais{
+            &-md{align-items: start;
+            }
+        }
+    }
+ @include pad(){
+    .align-items-start {
+        &-md{
+        align-items: start;
+       }
+    }
+}
+
+.pic{
+    &-100{
+        max-width:100%;
+    }
+    @include large(){
+        &-l{
+        &-50{
+            max-width:50%;
+        }
+    }
+}
+    @include mobile(){
+       &-sm{
+        &-100{
+            max-width:100%;
+        }
+        &-348{
+            max-width:348px;
+        }
+    }
+}
+}
+.object-fit{
+    object-fit:cover;
+}
